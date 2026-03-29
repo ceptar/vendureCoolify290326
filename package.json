@@ -1,0 +1,37 @@
+{
+  "name": "vendureCoolify290326",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "ts-node ./src/index.ts",
+    "dev:worker": "ts-node ./src/index-worker.ts",
+    "dev": "concurrently npm:dev:*",
+    "build": "tsc",
+    "start:server": "node ./dist/index.js",
+    "start:worker": "node ./dist/index-worker.js",
+    "start": "concurrently npm:start:*",
+    "build:dashboard": "vite build"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.975.0",
+    "@aws-sdk/lib-storage": "^3.975.0",
+    "@vendure/asset-server-plugin": "3.5.1",
+    "@vendure/common": "^3.5.1",
+    "@vendure/core": "3.5.1",
+    "@vendure/create": "^3.5.1",
+    "@vendure/dashboard": "3.5.1",
+    "@vendure/email-plugin": "3.5.1",
+    "@vendure/graphiql-plugin": "3.5.1",
+    "@vendure/job-queue-plugin": "^3.5.1",
+    "better-sqlite3": "12.4.1",
+    "bullmq": "^5.58.2",
+    "dotenv": "17.2.3",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@vendure/cli": "3.5.1",
+    "concurrently": "9.2.1",
+    "typescript": "5.8.2"
+  }
+}
