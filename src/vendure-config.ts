@@ -105,7 +105,7 @@ export const config: VendureConfig = {
         BullMQJobQueuePlugin.init({
         connection: {
           host: process.env.REDIS_HOST,
-          port: +(process.env.REDIS_PORT,
+          port: +(process.env.REDIS_PORT),
           username: process.env.REDIS_USERNAME,
           password: process.env.REDIS_PASSWORD,
           maxRetriesPerRequest: null,
