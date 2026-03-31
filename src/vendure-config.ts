@@ -1,6 +1,5 @@
 import {
   dummyPaymentHandler,
-  HealthCheckPlugin,
   // DefaultJobQueuePlugin,
   DefaultSchedulerPlugin,
   DefaultSearchPlugin,
@@ -83,7 +82,6 @@ export const config: VendureConfig = {
   // need to be updated. See the "Migrations" section in README.md.
   customFields: {},
   plugins: [
-    HealthCheckPlugin,
     GraphiqlPlugin.init(),
     //        AssetServerPlugin.init({
     //           route: "assets",
