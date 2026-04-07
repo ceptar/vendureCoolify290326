@@ -34,6 +34,7 @@ export const config: VendureConfig = {
   apiOptions: {
     port: process.env.PORT ? +process.env.PORT : 8889,
     hostname: "0.0.0.0",
+    trustProxy: 1,
     //         cors: {
     //   origin: '',
     //   methods: ['GET', 'POST', 'OPTIONS'],
